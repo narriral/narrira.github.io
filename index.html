@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>narrira l. s.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5></h5>
+    <div class="fakeimg" style="height:200px;"><img src="./profile.jpg"></div>
+    <p><strong>Narrira Lemos S</strong></p>
+    <p>Brazil</p>
+    <p><strong>Contact</strong> narrirals@gmail.com and nah@riseup.net (for sensitive information)</p>
+    <h3>Expertise</h3>
+    <p>digital security trainer, project manager, and UX researcher, sustainable practices for privacy and security aligned with social justice.
+    
+  </div>
+  <div class="main">
+    <h2>What I'm doing</h2>
+    <h4>Mozilla Fellowship</h4>
+    <p>As a Mozilla Fellow, I'm researching information on the tools, strategies and infrastructures used to execute and propagate fake news in Latin America; including misinformation’s impact on public opinion and social practices, and the role automated decision making plays. I'm embed at the host organization Derechos Digitales. </p>
+    <br>
+    <h4>Cl4ndestina</h4>
+    <p><strong>Co-founder, sysadmin</strong> - <a href="https://clandestina.io">Cl4ndestina</a> is a volunteer project to provide safe and reliable infrastructure to feminist human rights defenders in the Global South.</p>
+    
+    <br>
+    <h4>The Tor Project</h4>
+    <p><strong>User research, core contributor</strong> - At <a href="https://www.torproject.org">The Tor Project</a> I work as User Researcher supporting Community and UX teams.</p>
+
+    <br>
+    <h4>Past Experience</h4>
+    <p>Find out about my past experiences on my <a href="https://www.linkedin.com/in/narriral/">Linkedin</a> page.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2></h2>
+</div>
+
+</body>
+</html>
+
+
